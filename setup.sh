@@ -1,9 +1,12 @@
 
 #!/bin/bash
 
-# Update and install necessary packages for Python and distutils
+# Update and install necessary packages for Python, setuptools, and distutils
 sudo apt-get update
 sudo apt-get install -y python3 python3-pip python3-distutils
+
+# Install setuptools to handle Python package building requirements
+pip install --upgrade setuptools
 
 # Upgrade pip and install virtualenv if not installed
 pip install --upgrade pip
