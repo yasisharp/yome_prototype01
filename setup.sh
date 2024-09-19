@@ -1,9 +1,9 @@
 
 #!/bin/bash
 
-# Update and install necessary packages for Python, setuptools, and distutils
+# Update and install necessary packages for Python and setuptools
 sudo apt-get update
-sudo apt-get install -y python3 python3-pip python3-distutils
+sudo apt-get install -y python3 python3-pip
 
 # Install setuptools to handle Python package building requirements
 pip install --upgrade setuptools
@@ -15,9 +15,6 @@ pip install virtualenv
 # Create a virtual environment
 virtualenv venv
 source venv/bin/activate
-
-# Ensure distutils is installed inside the virtual environment
-pip install distutils
 
 # Install required Python packages
 pip install -r requirements.txt
