@@ -1,6 +1,6 @@
 
 Flask==2.0.1
 tensorflow>=2.16
-numpy==1.23.5  # Pre-built wheels available for this version
+numpy==1.24.3  # Use this version which has pre-built binaries for Python 3.12
 pandas==1.3.2
 scikit-learn==0.24.2
