@@ -5,8 +5,8 @@
 sudo apt-get update
 sudo apt-get install -y python3 python3-pip
 
-# Install setuptools to handle Python package building requirements
-pip install --upgrade setuptools
+# Upgrade setuptools and wheel to avoid build issues with numpy
+pip install --upgrade setuptools wheel
 
 # Upgrade pip and install virtualenv if not installed
 pip install --upgrade pip
