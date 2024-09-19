@@ -16,6 +16,9 @@ pip install virtualenv
 virtualenv venv
 source venv/bin/activate
 
+# Ensure distutils is installed inside the virtual environment
+pip install distutils
+
 # Install required Python packages
 pip install -r requirements.txt
 
