@@ -19,18 +19,41 @@ We sourced antibody-target data from publicly available datasets, specifically f
 
 ## How to Run
 
-### 1. Install Dependencies
-To install the required Python packages, run:
-```
-pip install -r requirements.txt
-```
+### 1. Automated Setup (Linux)
+To automatically set up the environment, you can use the provided `setup.sh` script. It will install the necessary dependencies, create a virtual environment, and install required Python packages.
 
-### 2. Run the Flask App
-To start the web server and use the tool:
-```
-python app.py
-```
-Open your browser and go to `http://127.0.0.1:5000/` to use the interface.
+1. Navigate to the project directory and run the following command:
+   ```bash
+   ./setup.sh
+   ```
+
+2. Activate the virtual environment:
+   ```bash
+   source venv/bin/activate
+   ```
+
+3. Run the Flask App:
+   ```bash
+   python app.py
+   ```
+
+4. Open your browser and go to `http://127.0.0.1:5000/` to use the interface.
+
+### 2. Manual Setup (For Other Environments)
+Alternatively, you can manually install dependencies and run the app.
+
+1. Install Dependencies
+   To install the required Python packages, run:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+2. Run the Flask App:
+   ```bash
+   python app.py
+   ```
+
+3. Open your browser and go to `http://127.0.0.1:5000/` to use the interface.
 
 ### 3. Input Format
 Input an antibody sequence using the standard 1-letter amino acid code (e.g., "KPLKPVKPKS"), and the system will predict the target sequence.
