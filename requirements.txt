@@ -1,6 +1,0 @@
-
-Flask==2.0.1
-tensorflow>=2.16
-numpy==1.24.3  # Using a pre-built version that doesn't require compilation
-pandas==1.3.2
-scikit-learn==0.24.2
